@@ -1,6 +1,6 @@
 {
   "name": "@pokujs/multi-suite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "A Poku plugin to run multiple independent test suites as a single, unified execution.",
   "main": "./lib/index.js",
@@ -40,13 +40,13 @@
     "@biomejs/biome": "^1.9.4",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@types/node": "^25.3.3",
-    "poku": "^4.0.1-canary.2bac6774",
+    "poku": "^4.1.0",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "poku": "canary"
+    "poku": "^4.1.0"
   },
   "publishConfig": {
     "access": "public"
@@ -58,6 +58,7 @@
     "plugin",
     "multi-suite",
     "test-runner",
+    "sequential",
     "parallel"
   ]
 }
