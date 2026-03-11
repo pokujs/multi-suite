@@ -1,6 +1,6 @@
 {
   "name": "@pokujs/multi-suite",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": false,
   "description": "A Poku plugin to run multiple independent test suites as a single, unified execution.",
   "main": "./lib/index.js",
