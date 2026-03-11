@@ -1,3 +1,3 @@
-import process from 'node:process';
+const process = require('node:process');
 
 process.exit(0);

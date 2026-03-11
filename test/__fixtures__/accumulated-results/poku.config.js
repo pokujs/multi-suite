@@ -1,5 +1,5 @@
-import { multiSuite } from '../../../src/index.js';
+const { multiSuite } = require('../../../src/index.js');
 
-export default {
+module.exports = {
   plugins: [multiSuite([{ include: 'suite-a' }, { include: 'suite-b' }])],
 };

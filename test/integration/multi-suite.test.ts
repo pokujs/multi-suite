@@ -17,7 +17,7 @@ const runPlugin = async (
   try {
     await poku(OUTER_DIR, {
       noExit: true,
-      // quiet: true,
+      quiet: true,
       plugins: [multiSuite(suites)],
     });
   } finally {
