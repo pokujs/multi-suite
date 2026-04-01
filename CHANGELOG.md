@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/pokujs/multi-suite/compare/v1.0.0...v1.0.1) (2026-04-01)
+
+
+### Bug Fixes
+
+* replace `process.exit` with graceful shutdown ([#3](https://github.com/pokujs/multi-suite/issues/3)) ([338596c](https://github.com/pokujs/multi-suite/commit/338596c9d3fb9d88e3adc0d400c2fe1027920bf0))
+
 ## 1.0.0 (2026-03-11)
 
 
