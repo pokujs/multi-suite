@@ -84,6 +84,6 @@ export const multiSuite = (suites: ConfigFile[]): PokuPlugin => ({
     }
 
     process.removeListener('SIGINT', onSignal);
-    process.exit(finalCode);
+    process.exitCode = finalCode;
   },
 });
