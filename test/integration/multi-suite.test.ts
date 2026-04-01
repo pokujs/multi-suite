@@ -7,24 +7,17 @@ const OUTER_DIR = 'test/__fixtures__/empty';
 const runPlugin = async (
   suites: Parameters<typeof multiSuite>[0]
 ): Promise<number> => {
-  const originalExit = process.exit;
-  let exitCode = 0;
+  const originalExitCode = process.exitCode;
 
-  (process as NodeJS.Process).exit = ((code?: number) => {
-    exitCode = code === 0 ? 0 : 1;
-  }) as typeof process.exit;
+  await poku(OUTER_DIR, {
+    noExit: true,
+    quiet: true,
+    plugins: [multiSuite(suites)],
+  });
 
-  try {
-    await poku(OUTER_DIR, {
-      noExit: true,
-      quiet: true,
-      plugins: [multiSuite(suites)],
-    });
-  } finally {
-    process.exit = originalExit;
-  }
-
-  return exitCode;
+  const code = Number(process.exitCode ?? 0);
+  process.exitCode = originalExitCode;
+  return code;
 };
 
 describe('Plugin: multi-suite', async () => {
