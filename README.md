@@ -17,7 +17,8 @@ Enjoying **Poku**? [Give him a star to show your support](https://github.com/wel
 
 > [!TIP]
 >
-> Run multiple suites as one: independent concurrency, reporters, plugins, and quiet mode per suite, with isolated executions and a single consolidated report at the end.
+> - Run multiple suites as one: independent concurrency, reporters, plugins, and quiet mode per suite, with isolated executions and a single consolidated report at the end.
+> - Combine with [**@pokujs/coverage**](https://github.com/pokujs/coverage) to merge the suites automatically on teardown.
 
 ---
 
