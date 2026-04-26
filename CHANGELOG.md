@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/pokujs/multi-suite/compare/v1.0.1...v1.0.2) (2026-04-26)
+
+
+### Bug Fixes
+
+* propagate outer plugins into multi-suite sub-suites ([#5](https://github.com/pokujs/multi-suite/issues/5)) ([393f57e](https://github.com/pokujs/multi-suite/commit/393f57e49bf34c417fef4190882cb276ed5a27ae))
+
 ## [1.0.1](https://github.com/pokujs/multi-suite/compare/v1.0.0...v1.0.1) (2026-04-01)
 
 
