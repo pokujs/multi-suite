@@ -1,6 +1,6 @@
+import type { PokuPlugin } from 'poku/plugins';
 import { mkdir } from 'node:fs/promises';
 import { assert, describe, it, poku } from 'poku';
-import type { PokuPlugin } from 'poku/plugins';
 import { multiSuite } from '../../src/index.js';
 
 const OUTER_DIR = 'test/__fixtures__/empty';
@@ -48,7 +48,11 @@ describe('Plugin: multi-suite forwards per-file hooks to sub-suites', async () =
     process.exitCode = originalExitCode;
 
     assert.strictEqual(setupCount, 1, 'outer setup must run exactly once');
-    assert.strictEqual(teardownCount, 1, 'outer teardown must run exactly once');
+    assert.strictEqual(
+      teardownCount,
+      1,
+      'outer teardown must run exactly once'
+    );
     assert.strictEqual(
       runnerCalls.length,
       2,
