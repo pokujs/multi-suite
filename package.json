@@ -24,8 +24,7 @@
   "engines": {
     "node": ">=16.x.x",
     "bun": ">=1.x.x",
-    "deno": ">=2.x.x",
-    "typescript": ">=5.x.x"
+    "deno": ">=2.x.x"
   },
   "scripts": {
     "test": "poku test/integration",
@@ -38,15 +37,15 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
-    "@types/node": "^25.3.3",
-    "poku": "^4.3.0",
-    "prettier": "^3.8.1",
-    "tsx": "^4.21.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+    "@types/node": "^25.9.1",
+    "poku": "^4.3.2",
+    "prettier": "^3.8.3",
+    "tsx": "^4.22.3",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "poku": "^4.3.0"
+    "poku": "^4.3.2"
   },
   "publishConfig": {
     "access": "public"
